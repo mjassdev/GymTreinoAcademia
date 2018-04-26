@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000088"
+    tools:context=".TelaPerfil">
+
+
+    <ImageView
+        android:id="@+id/imagePerfil"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/avisos"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btOk"
+        android:layout_below="@+id/perfil"
+        android:layout_marginTop="55dp" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/switch1"
+        android:layout_below="@+id/switch1"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imagePerfil"
+        android:layout_toEndOf="@+id/imagePerfil"
+        android:text="Perfil"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/avisos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/switch2"
+        android:layout_alignStart="@+id/preferencias"
+        android:text="Avisos"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/preferencias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/switch2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:text="Preferencias"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/preferencias"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:onClick="logout"
+        android:text="SAIR" />
+
+</RelativeLayout>

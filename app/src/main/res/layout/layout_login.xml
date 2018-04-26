@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#336666"
+    tools:context=".LoginActivity">
+
+    <Button
+        android:id="@+id/TelaLoginbotaoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TelaLoginCamposenha"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:background="#ffffff"
+        android:onClick="validaLogin"
+        android:text="Entrar"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#336666" />
+
+    <EditText
+        android:id="@+id/TelaLoginCampologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logogym"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Usuário"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/TelaLoginCamposenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TelaLoginCampologin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <ImageView
+        android:id="@+id/logogym"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/logogym" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TelaLoginbotaoLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="Esqueci minha senha"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"
+        />
+
+
+
+
+</RelativeLayout>
