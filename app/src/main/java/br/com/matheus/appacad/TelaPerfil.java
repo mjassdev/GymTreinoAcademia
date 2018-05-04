@@ -10,18 +10,20 @@ import android.view.View;
 import android.widget.Switch;
 import android.widget.TextView;
 
+
+//Classe utilizada para tela de perfil de usuário
 public class TelaPerfil extends AppCompatActivity {
 
-    TextView usuario = null;
-    Switch preferencias = null;
-    Switch avisos = null;
+    TextView usuario = null; //Declarando nome do usuário
+    Switch preferencias = null; //Declarando preferencias de usuário
+    Switch avisos = null; //Declarando avisos
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tela_perfil);
+        setContentView(R.layout.activity_tela_perfil); //Atribuindo a tela que será utilizada para perfil
 
-        usuario = (TextView)findViewById(R.id.perfil);
+        usuario = (TextView)findViewById(R.id.perfil); //Definindo qual item será atribuido à variavel usuário
 
         Bundle dicionario = this.getIntent().getExtras();
 
@@ -31,11 +33,11 @@ public class TelaPerfil extends AppCompatActivity {
 
     }
 
-    public void logout(View botao){
+    public void logout(View botao){ //metódo utilizado para acionamento do botao de sair do sistema
         AlertDialog.Builder alerta = new AlertDialog.Builder(this);
         alerta.setIcon(R.mipmap.ic_launcher);
         alerta.setTitle("Atenção");
-        alerta.setMessage("Deseja realmente sair?");
+        alerta.setMessage("Deseja realmente sair?"); //Solicitndo confirmacao de saida
         alerta.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

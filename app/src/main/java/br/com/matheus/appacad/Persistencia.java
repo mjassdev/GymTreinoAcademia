@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 
+//Classe usada para persistencia dos dados
 public class Persistencia {
     public static void salvaPreferencias(boolean notifications, boolean preferences, Context contexto){
         SharedPreferences favoritos =

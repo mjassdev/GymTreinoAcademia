@@ -19,12 +19,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main); //Habilitando a Tela
 
     }
 
 
     public void TreinoA(View v){
+
+        //Informando estaticamente os dados que serao apresentados na lista de exercicios
 
         Exercicio titulo = new Exercicio("Exercicio", "Maquina", "Series", "Repetições", "Carga", "Assento", R.drawable.esteira);
         Exercicio e1 = new Exercicio("Corrida", "Esteira", "15 min", "-", "6 / 9", "-", R.drawable.esteira);
@@ -46,12 +48,14 @@ public class MainActivity extends AppCompatActivity {
         ListaExercicios.add(e8);
 
         Intent i = new Intent(MainActivity.this, ListaExerciciosActivity.class);
-        i.putExtra("Treino", ListaExercicios);
+        i.putExtra("Treino", ListaExercicios); //Atribuindo os dados acima à ArryaList de Exercicios
         startActivity(i);
 
     }
 
     public void Avaliacao(View v){
+
+        //Informando estaticamente os dados que serao apresentados na lista de Avliacoes
 
         Avaliacao titulo = new Avaliacao("TIPO", "ANTERIOR", "INDICADOR", "ATUAL");
         ListaAvaliacao.add(titulo);
@@ -71,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
         ListaAvaliacao.add(a7);
 
         Intent i = new Intent(MainActivity.this, ListaAvaliacaoActivity.class);
-        i.putExtra("Avaliações", ListaAvaliacao);
+        i.putExtra("Avaliações", ListaAvaliacao); //Atribuindo os dados acima à ArryaList de Avaliacoes
         startActivity(i);
 
     }
